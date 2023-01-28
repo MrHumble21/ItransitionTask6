@@ -108,9 +108,10 @@ function SendForm({ name }) {
     status: true,
     custom_id: genUUID(),
   };
+
   return (
     <>
-      <Container className="p-4">
+      <Container className="resposive-width p-4">
         <center>
           <Link to={"/"}>
             <h3>Main page</h3>
@@ -127,8 +128,8 @@ function SendForm({ name }) {
             <Sent />
           </Container>
         )}
-        <Container className="d-flex flex-column justify-content-center align-items-center">
-          <div className="w-75">
+        <Container className="resposive-width d-flex flex-column justify-content-center align-items-center">
+          <div className="w-100">
             <div className="alert alert-dismissible alert-light">
               <button
                 type="button"
@@ -173,7 +174,7 @@ function SendForm({ name }) {
                         })[0]["Name"]
                       );
                     }}
-                    className="form-control"
+                    className="form-control w-100 w-100 w-100"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder=" Start typing and users will be appeared in the dropdown list "
@@ -216,7 +217,7 @@ function SendForm({ name }) {
                     required
                     type="text"
                     value={title}
-                    className="form-control"
+                    className="form-control w-100 w-100"
                     onChange={(e) => {
                       setTitle(e.target.value);
                     }}
@@ -235,7 +236,7 @@ function SendForm({ name }) {
                     onChange={(e) => {
                       setMessage(e.target.value);
                     }}
-                    className="form-control"
+                    className="form-control w-100 w-100"
                     id="exampleTextarea"
                     rows="3"
                   ></textarea>
