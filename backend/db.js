@@ -4,7 +4,9 @@ const { Schema } = mongoose;
 import { v4 as uuidv4 } from "uuid";
 
 mongoose.set("strictQuery", false);
-export const uri = "mongodb://127.0.0.1:27017/task--six";
+export const uri =
+  "mongodb+srv://Abdulboriy:MongoDB@cluster0.mpywc.mongodb.net/?retryWrites=true&w=majority/task6";
+
 connect(uri);
 
 export const Users = new Schema({
